@@ -1,0 +1,4 @@
+name = "AWSIAM"
+uuid = "7c261350-4a29-4036-ae6e-797df4b04147"
+
+[deps]
