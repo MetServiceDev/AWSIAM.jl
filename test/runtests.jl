@@ -4,9 +4,9 @@
 # Copyright OC Technology Pty Ltd 2014 - All rights reserved
 #==============================================================================#
 
-
+using AWSCore
 using AWSIAM
-using Base.Test
+using Test
 
 AWSCore.set_debug_level(1)
 
@@ -23,7 +23,7 @@ aws = AWSCore.aws_config(region="ap-southeast-2")
 # IAM tests
 #-------------------------------------------------------------------------------
 
-@test ismatch(r"^arn:aws:iam::[0-9]+:[^:]+$", iam_whoami(aws))
+@test occursin(r"^arn:aws:iam::[0-9]+:[^:]+$", iam_whoami(aws))
 
 
 
