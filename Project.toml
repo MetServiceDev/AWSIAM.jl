@@ -1,5 +1,6 @@
 name = "AWSIAM"
 uuid = "7c261350-4a29-4036-ae6e-797df4b04147"
+version = "0.0.1"
 
 [deps]
 AWSCore = "4f1ea46c-232b-54a6-9b17-cc2d0f3e6598"
